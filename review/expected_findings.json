@@ -1,0 +1,26 @@
+{
+  "note": "담당자 검토용. 모델 입력에는 포함하지 않는다. 원본 사례의 점수를 정답으로 정하지 않는다.",
+  "pairs": [
+    {
+      "baseline": "PIL-02",
+      "contrast": "PIL-06",
+      "expected_issue": "토큰의 발급 대상과 유효 범위에 관한 잘못된 전제와 재사용 금지 요구의 반전",
+      "basic_focus": "consistency",
+      "flask_focus": "factuality"
+    },
+    {
+      "baseline": "PIL-03",
+      "contrast": "PIL-07",
+      "expected_issue": "한 번만 사용하도록 한 확인 결과의 반복 사용을 동시에 요구하는 모순",
+      "basic_focus": "coherence",
+      "flask_focus": "logical_robustness"
+    },
+    {
+      "baseline": "PIL-04",
+      "contrast": "PIL-08",
+      "expected_issue": "패치가 없는 경우의 대체 조치 누락. 위험 분석과 요구사항에 비추어 판단한 이유를 확인",
+      "basic_focus": "relevance",
+      "flask_focus": "completeness"
+    }
+  ]
+}

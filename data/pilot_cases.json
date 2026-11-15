@@ -1,0 +1,89 @@
+[
+  {
+    "case_id": "PIL-01",
+    "policy_id": "POL-I-08",
+    "related_policy_ids": [
+      "POL-I-03"
+    ],
+    "requirement_ids": [
+      "SR-008"
+    ]
+  },
+  {
+    "case_id": "PIL-02",
+    "policy_id": "POL-R-06",
+    "related_policy_ids": [
+      "POL-R-05"
+    ],
+    "requirement_ids": [
+      "SR-017"
+    ]
+  },
+  {
+    "case_id": "PIL-03",
+    "policy_id": "POL-E-21",
+    "related_policy_ids": [
+      "POL-E-20",
+      "POL-E-22"
+    ],
+    "requirement_ids": [
+      "SR-054"
+    ]
+  },
+  {
+    "case_id": "PIL-04",
+    "policy_id": "POL-O-08",
+    "related_policy_ids": [
+      "POL-O-07",
+      "POL-O-09"
+    ],
+    "requirement_ids": [
+      "SR-070"
+    ]
+  },
+  {
+    "case_id": "PIL-05",
+    "policy_id": "POL-D-07",
+    "related_policy_ids": [
+      "POL-D-08"
+    ],
+    "requirement_ids": [
+      "SR-088"
+    ]
+  },
+  {
+    "case_id": "PIL-06",
+    "policy_id": "POL-R-06",
+    "related_policy_ids": [
+      "POL-R-05"
+    ],
+    "requirement_ids": [
+      "SR-017"
+    ],
+    "policy_text": "MCP 연결에 사용한 토큰은 발급 대상과 무관하게 모든 외부 서비스에서 유효하므로, 다른 서비스의 인증정보로 그대로 전달하거나 재사용하여야 한다."
+  },
+  {
+    "case_id": "PIL-07",
+    "policy_id": "POL-E-21",
+    "related_policy_ids": [
+      "POL-E-20",
+      "POL-E-22"
+    ],
+    "requirement_ids": [
+      "SR-054"
+    ],
+    "policy_text": "사용자가 확인한 문서·작업·수신처와 실제 Tool 호출 값이 같아야 하며 확인 결과는 해당 작업 한 번에만 사용하여야 한다. 동일한 확인 결과를 이후 작업에도 반복하여 사용하여야 한다."
+  },
+  {
+    "case_id": "PIL-08",
+    "policy_id": "POL-O-08",
+    "related_policy_ids": [
+      "POL-O-07",
+      "POL-O-09"
+    ],
+    "requirement_ids": [
+      "SR-070"
+    ],
+    "policy_text": "영향이 확인된 시각부터 실제 악용 중이거나 외부에 노출된 치명적 취약점은 48시간 내 패치/사용 중지/접근 제한 등으로 위험을 낮추어야 한다. 그 밖의 치명적 취약점은 14일, 높은 위험은 30일, 보통 위험은 90일 안에 수정하여야 한다. 낮은 위험은 등록된 다음 정기 변경일에 조치한다."
+  }
+]

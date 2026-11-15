@@ -1,0 +1,92 @@
+[
+  {
+    "id": "SR-008",
+    "text": "로컬 MCP 서버가 사용할 파일, 프로세스 및 실행 권한을 도입 전에 최소화해야 한다.",
+    "risk_ids": [
+      "RSK-07"
+    ],
+    "mapped_references": {
+      "MCP Security Best Practices 2026-07-28": "Local MCP Server Compromise",
+      "OWASP MCP Top 10 2025 Beta": "MCP07",
+      "OWASP MCP Security Cheat Sheet": "3. Sandbox and Isolate MCP Servers"
+    },
+    "source": {
+      "file": "MCP 위험 분석 및 보안 요구사항 도출.xlsx",
+      "sheet": "보안 요구사항",
+      "row": 12
+    }
+  },
+  {
+    "id": "SR-017",
+    "text": "MCP 서버는 MCP 접속용 토큰을 다른 서비스의 인증정보로 그대로 전달하거나 사용하지 않아야 한다.",
+    "risk_ids": [
+      "RSK-13"
+    ],
+    "mapped_references": {
+      "MCP Security Best Practices 2026-07-28": "Token Passthrough",
+      "OWASP MCP Top 10 2025 Beta": "MCP01",
+      "OWASP MCP Security Cheat Sheet": "6. Authentication, Authorization & Transport Security",
+      "개인정보 보호법 2026-09-11 시행": "개인정보 보호법 제29조 안전조치의무(개인정보 처리 시)"
+    },
+    "source": {
+      "file": "MCP 위험 분석 및 보안 요구사항 도출.xlsx",
+      "sheet": "보안 요구사항",
+      "row": 20
+    }
+  },
+  {
+    "id": "SR-054",
+    "text": "사용자 승인은 한 번의 특정 작업에만 적용하고 승인 만료 처리하고, 승인 만료 여부를 검증해야 한다.",
+    "risk_ids": [
+      "RSK-39"
+    ],
+    "mapped_references": {
+      "MCP Specification 2026-07-28": "Tools: Security Considerations",
+      "OWASP MCP Security Cheat Sheet": "4. Human-in-the-Loop for Sensitive Actions",
+      "인공지능기본법 2026-07-21 시행": "제34조제1항제4호 사람의 관리·감독\n(고영향 AI 제공 시 관련)"
+    },
+    "source": {
+      "file": "MCP 위험 분석 및 보안 요구사항 도출.xlsx",
+      "sheet": "보안 요구사항",
+      "row": 57
+    }
+  },
+  {
+    "id": "SR-070",
+    "text": "영향이 확인된 서버와 의존성의 취약점은 정해진 기한 안에 수정하거나 격리해야 한다.",
+    "risk_ids": [
+      "RSK-49"
+    ],
+    "mapped_references": {
+      "OWASP MCP Top 10 2025 Beta": "MCP04",
+      "OWASP MCP Security Cheat Sheet": "9. Supply Chain Security",
+      "ISO 42001:2023": "A.6.2.6 AI system operation and monitoring",
+      "NIST AI RMF 1.0": "Manage 1.3",
+      "개인정보 보호법 2026-09-11 시행": "개인정보 보호법 제29조 안전조치의무(개인정보 포함 자료 처리 시; 일반 근거)",
+      "인공지능기본법 2026-07-21 시행": "제32조제1항제1호 전주기 위험 식별·평가·완화\n(법정 연산량 기준 해당 시 간접 관련)",
+      "ISMS-P 인증기준 2023.11 안내서": "ISMS-P 2.10.8 패치관리"
+    },
+    "source": {
+      "file": "MCP 위험 분석 및 보안 요구사항 도출.xlsx",
+      "sheet": "보안 요구사항",
+      "row": 73
+    }
+  },
+  {
+    "id": "SR-088",
+    "text": "외부 MCP 제공자가 보유한 전달 데이터의 삭제/반환을 요청하고 완료 여부를 확인해야 한다.",
+    "risk_ids": [
+      "RSK-64"
+    ],
+    "mapped_references": {
+      "ISO 42001:2023": "A.10.3 Suppliers",
+      "개인정보 보호법 2026-09-11 시행": "개인정보 보호법 제21조제1항",
+      "ISMS-P 인증기준 2023.11 안내서": "2.3.4 외부자 계약 변경 및 만료 시 보안"
+    },
+    "source": {
+      "file": "MCP 위험 분석 및 보안 요구사항 도출.xlsx",
+      "sheet": "보안 요구사항",
+      "row": 91
+    }
+  }
+]

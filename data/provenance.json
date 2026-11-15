@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "name": "reference.xlsm",
+      "sha256": "5ae70c916b7e14205a27f317aa863d52e300e145588bd53567a00a3e20cb6011"
+    },
+    {
+      "name": "MCP 위험 분석 및 보안 요구사항 도출.xlsx",
+      "sha256": "caf5bd339e523e4047f92a51c44dd6385cb739b4f929e4a14497ab81b6085049"
+    },
+    {
+      "name": "MCP 보안 관리 정책 검증 설계 보고서_v3.7.docx",
+      "sha256": "f53aaeac40cc13bfc3066d170914e830dbaa3ac443b3de7e9c9bbb8e511e74c1"
+    }
+  ],
+  "policy_requirement_crosswalk": [
+    {
+      "policy_id": "POL-I-08",
+      "policy_sheet_requirement_id": "SR-I-09",
+      "evidence_requirement_id": "SR-008"
+    },
+    {
+      "policy_id": "POL-R-06",
+      "policy_sheet_requirement_id": "SR-R-06",
+      "evidence_requirement_id": "SR-017"
+    },
+    {
+      "policy_id": "POL-E-21",
+      "policy_sheet_requirement_id": "SR-E-21",
+      "evidence_requirement_id": "SR-054"
+    },
+    {
+      "policy_id": "POL-O-08",
+      "policy_sheet_requirement_id": "SR-O-08",
+      "evidence_requirement_id": "SR-070"
+    },
+    {
+      "policy_id": "POL-D-07",
+      "policy_sheet_requirement_id": "SR-D-07",
+      "evidence_requirement_id": "SR-088"
+    }
+  ],
+  "crosswalk_reason": "정책 시트는 생애주기별 ID, 근거 원본은 숫자형 ID를 사용한다. 선정한 다섯 정책에 대해 내용 대조 후 연결한 요구사항의 원본 ID를 사용한다.",
+  "policy_source_url": "https://docs.google.com/spreadsheets/d/1NGFWTI_TNnUiDPHupOIfEOyfcB9h5ecM/edit?gid=1487612037"
+}
