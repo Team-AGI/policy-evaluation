@@ -7,6 +7,7 @@ import io
 import json
 import os
 from pathlib import Path
+import subprocess
 import sys
 import tempfile
 import threading
@@ -83,6 +84,14 @@ class EvaluationTests(unittest.TestCase):
         self.config = load_config(ROOT / 'config.toml')
         self.config['run'].update(retry_delay_seconds=0, max_retry_delay_seconds=0)
         self.material = evaluation_input(self.data, self.data['pilot_cases'][0])
+
+    def test_cli_redirected_output_supports_korean_with_ascii_default(self):
+        result = subprocess.run(
+            [sys.executable, str(ROOT / 'run_pilot.py'), '--dry-run', '--cases', 'PIL-01', '--models', 'gpt', '--tasks', 'basic'],
+            cwd=ROOT, env={**os.environ, 'PYTHONIOENCODING': 'ascii'}, capture_output=True, timeout=30,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr.decode('utf-8'))
+        self.assertIn('구성 점검 완료', result.stdout.decode('utf-8'))
 
     def test_real_eight_cases_and_crosswalk(self):
         self.assertEqual(len(self.data['pilot_cases']), 8)
